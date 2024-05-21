@@ -113,6 +113,21 @@ document.getElementById("btnTinhTien").onclick = () => {
 };
 
 document.getElementById("btn_inHoaDon").onclick = () => {
+  // Xóa nội dung cũ trước khi thêm thông tin mới
+  document.getElementById("suDung1").innerHTML = "";
+  document.getElementById("suDung2").innerHTML = "";
+  document.getElementById("suDung3").innerHTML = "";
+  document.getElementById("suDung4").innerHTML = "";
+  document.getElementById("donGia1").innerHTML = "";
+  document.getElementById("donGia2").innerHTML = "";
+  document.getElementById("donGia3").innerHTML = "";
+  document.getElementById("donGia4").innerHTML = "";
+  document.getElementById("thanhTien1").innerHTML = "";
+  document.getElementById("thanhTien2").innerHTML = "";
+  document.getElementById("thanhTien3").innerHTML = "";
+  document.getElementById("thanhTien4").innerHTML = "";
+  document.getElementById("tongTienHoaDon").innerHTML = "";
+
   //   lấy dữ liệu lưu trữ (loại xe, số km, thời gian chờ)
   let soKm = document.getElementById("txt-km").value * 1;
   console.log(soKm);
