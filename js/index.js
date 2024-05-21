@@ -106,8 +106,10 @@ document.getElementById("btnTinhTien").onclick = () => {
 
   // console.log(document.getElementById("divThanhTien"));
   document.getElementById("divThanhTien").style.display = "block";
-  document.getElementById("xuatTien").innerHTML =
-    tongTien.toLocaleString("vi-VN");
+  document.getElementById("xuatTien").innerHTML = tongTien.toLocaleString(
+    "vi-VN",
+    { style: "currency", currency: "VND" }
+  );
 };
 
 document.getElementById("btn_inHoaDon").onclick = () => {
