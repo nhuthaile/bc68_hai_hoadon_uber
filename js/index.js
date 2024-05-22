@@ -214,7 +214,7 @@ document.getElementById("btn_inHoaDon").onclick = () => {
   }
 
   // KIEM TRA THOI GIAN CHO
-  suDung4Div.innerHTML = thoiGianCho;
+  suDung4Div.innerHTML = `${thoiGianCho} phút`;
   donGia4Div.innerHTML = giaTienThoiGianCho3Phut.toLocaleString("vi");
   thanhTien4Div.innerHTML = (
     Math.floor(thoiGianCho / 3) * giaTienThoiGianCho3Phut
