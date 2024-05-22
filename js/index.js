@@ -73,6 +73,7 @@ document.getElementById("btnTinhTien").onclick = () => {
   console.log("nut tinh tien");
   //   lấy dữ liệu lưu trữ (loại xe, số km, thời gian chờ)
   let soKm = document.getElementById("txt-km").value * 1;
+  if (soKm <= 0 || isNaN(soKm)) return;
   console.log(soKm);
   let thoiGianCho = document.getElementById("txt-thoiGianCho").value * 1;
   let loaiXe = document.querySelector("input[type='radio']:checked").value;
