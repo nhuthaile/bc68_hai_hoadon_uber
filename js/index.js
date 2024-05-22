@@ -130,6 +130,7 @@ document.getElementById("btn_inHoaDon").onclick = () => {
 
   //   lấy dữ liệu lưu trữ (loại xe, số km, thời gian chờ)
   let soKm = document.getElementById("txt-km").value * 1;
+  if (isNaN(soKm) || soKm <= 0) return;
   console.log(soKm);
   let thoiGianCho = document.getElementById("txt-thoiGianCho").value * 1;
   let loaiXe = document.querySelector("input[type='radio']:checked").value;
